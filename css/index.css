@@ -1,0 +1,3459 @@
+@charset "utf-8";
+
+html {
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: #c4c5c6;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 13%;
+}
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    display: none;
+}
+.tab_name.color {
+    color: #fff;
+}
+.header_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo>img {
+    width: 60%;
+    margin: 25px auto;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.menu_box {
+    display: flex;
+}
+
+.top,
+.rig,
+.bot,
+.lef {
+    transition: top 0.2s ease, left 0.2s ease;
+    position: absolute;
+    left: -15px;
+    top: 3px;
+    display: block;
+    width: 15px;
+}
+
+.menu_box:hover .top {
+    top: 1px;
+}
+
+.menu_box:hover .rig {
+    left: -13px;
+}
+
+.menu_box:hover .lef {
+    left: -17px;
+}
+
+.menu_box:hover .bot {
+    top: 5px;
+}
+
+.menu1 {
+    position: relative;
+}
+
+
+
+.menu_btn {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.content {
+    width: 100%;
+    height: 79%;
+}
+
+.inner {
+    width: 83%;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.tab {
+    transition: top 0.3s ease;
+    top: 0;
+}
+
+.tab:hover {
+    top: -11px;
+}
+
+.tab_area {
+    height: 60px;
+}
+
+.tab_area .tab_box {
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+
+.tab_box li {
+    width: 18.8%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.tab a {
+    display: block;
+    width: 100%;
+    height: 131%;
+    position: relative;
+    z-index: 1;
+    background-size: 100% 100%;
+    transition: 0.3s;
+}
+
+.tab a p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 77%;
+    color: #1d1d1b;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.tab_area ul li {
+    margin-left: -2%;
+}
+
+.tab_box .tab.on {
+    z-index: 8;
+}
+
+.tab_box .tab1 {
+    z-index: 6;
+}
+
+.tab_box .tab2 {
+    z-index: 5;
+}
+
+.tab_box .tab3 {
+    z-index: 4;
+}
+
+.tab_box .tab4 {
+    z-index: 3;
+}
+
+.tab_box .tab5 {
+    z-index: 2;
+}
+
+.tab_box .tab6 {
+    z-index: 1;
+}
+
+.tab1 a {
+    background-image: url(../img/tab-bg1-1.png);
+}
+
+.tab2 a {
+    background-image: url(../img/tab-bg2-1.png);
+}
+
+.tab3 a {
+    background-image: url(../img/tab-bg3-1.png);
+}
+
+.tab4 a {
+    background-image: url(../img/tab-bg4-1.png);
+}
+
+.tab5 a {
+    background-image: url(../img/tab-bg5-1.png);
+}
+
+.tab6 a {
+    background-image: url(../img/tab-bg6-1.png);
+}
+
+.side_txt {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    letter-spacing: 1px;
+    transform: translate(-100%, 0) rotate(90deg);
+    transform-origin: 100% 100%;
+}
+
+.cont_box {
+    height: 100%;
+    position: relative;
+    z-index: 15;
+    margin-left: -2%;
+}
+
+.box_area {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+.area {
+    width: 95%;
+    height: 650px;
+}
+
+
+/* 브랜드*/
+
+.box1 {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line_top {
+    position: absolute;
+    top: 0;
+    left: 1.5%;
+    width: 0;
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: .8s;
+}
+
+.line_lef {
+    position: absolute;
+    bottom: 4.8%;
+    left: 0;
+    width: 6px;
+    height: 0;
+    background: #000;
+    transition: .8s;
+}
+
+.line_rig {
+    position: absolute;
+    top: 4.8%;
+    right: 0;
+    width: 6px;
+    height: 0;
+    background: #000;
+    transition: .8s;
+}
+
+.line_bot {
+    position: absolute;
+    bottom: 0;
+    right: 1.5%;
+    width: 0;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+
+.line_lef1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 90%;
+    background: #000;
+}
+
+.line_rig1 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 90%;
+    background: #000;
+}
+
+
+.main_img {
+    position: absolute;
+    bottom: 1%;
+    right: 8%;
+    width: 28%;
+    transform: translateY(20%);
+    transition: 1s;
+    opacity: 0;
+    transition-delay: 1.6s;
+}
+
+
+.main_tit {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    font-size: 140px;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    line-height: 140px;
+    overflow: hidden;
+    transform: translateY(20%);
+    transition: 1s;
+    transition-delay: 1.4s;
+    opacity: 0;
+}
+
+.main_txt {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: -1px;
+    transform: translateY(20%);
+    transition: 1s;
+    transition-delay: 1.8s;
+    opacity: 0;
+}
+
+
+/* area2 */
+.line_top2 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: 0.8s;
+    transition-delay: 0.6s;
+}
+
+.line_top3 {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: 0.8s;
+    transition-delay: 0.6s;
+}
+
+.line_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 10%;
+    background: #000;
+    margin: 0 auto;
+    transition: 1s;
+    transition-delay: 0.8s;
+}
+
+.line_bot2 {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 6px;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.6s;
+}
+
+.line_bot3 {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 6px;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.6s;
+}
+
+.area2 {
+    width: 100%;
+    height: 100%;
+}
+
+.area2_box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.area2_lef {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area2_lef>img {
+    display: block;
+    width: 30%;
+    margin-bottom: 15px;
+    opacity: 0;
+    transition: 0.6s;
+    transition-delay: 1.5s;
+}
+
+.area2_lef>p {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Red Hat Display", sans-serif;
+    transition: 0.6s;
+    transition-delay: 1.8s;
+    opacity: 0;
+}
+
+.area2_lef>strong {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Red Hat Display", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.area2_rig {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: 1s;
+    transition-delay: 2s;
+}
+
+.area2line_top {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 25%;
+    background: #000;
+}
+
+.area2line_bot {
+    position: absolute;
+    bottom: 15%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 25%;
+    background: #000;
+}
+
+.area2line_rig {
+    position: absolute;
+    top: 44.5%;
+    right: 24%;
+    width: 25%;
+    height: 8px;
+    background: #000;
+}
+
+.area2line_lef {
+    position: absolute;
+    top: 44.5%;
+    left: 22%;
+    width: 25%;
+    height: 8px;
+    background: #000;
+}
+
+.area2_img1 {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    transition: 1s;
+    transition-delay: 2.8s;
+    opacity: 0;
+}
+
+.area2_img2 {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    text-align: center;
+    transition: 1s;
+    transition-delay: 2.8s;
+    opacity: 0;
+}
+
+.area2_img3 {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    bottom: 20%;
+    left: 23%;
+    text-align: center;
+    transition: 1s;
+    transition-delay: 2.8s;
+    opacity: 0;
+}
+
+.area2_img4 {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    bottom: 20%;
+    right: 25%;
+    text-align: center;
+    transition: 1s;
+    transition-delay: 2.8s;
+    opacity: 0;
+}
+
+/* area3 */
+.area3 {
+    width: 100%;
+    height: 100%;
+}
+
+.area3line_lef1 {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    width: 6px;
+    height: 46%;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_lef2 {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 6px;
+    height: 46%;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_rig1 {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 6px;
+    height: 46%;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_rig2 {
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    width: 6px;
+    height: 46%;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_center1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_center2 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_center3 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 6px;
+    height: 1%;
+    background: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_bot1 {
+    position: absolute;
+    bottom: -3px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3line_bot2 {
+    position: absolute;
+    bottom: -3px;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+}
+
+.area3box_top {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.area3_tit {
+    font-size: 120px;
+    font-weight: 700;
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.area3_txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 32px;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1.3s;
+}
+
+.area3_txt>img {
+    width: 15%;
+}
+
+.area3box_bot>img {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    width: 30%;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1.6s;
+}
+
+.area3box_bot p {
+    position: absolute;
+    bottom: 20px;
+    left: 2%;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.area3box_botR>img {
+    position: absolute;
+    bottom: 8px;
+    right: 11%;
+    opacity: 0;
+    transition: 1s;
+    transition-delay: 1.9s;
+}
+
+.area3box_botR p {
+    position: absolute;
+    bottom: 20px;
+    left: 52%;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* box2 - 특화설계 */
+.box2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background-color: #d6e7f7;
+}
+
+.box2_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box2_lef {
+    width: 62.5%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.box2line_top {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_top2 {
+    position: absolute;
+    top: 0;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_bot2 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_bot3 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_bot4 {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_bot5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 6px;
+    background: #000;
+    transition: 0.8s;
+
+}
+
+.box2line_lef {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    left: 0;
+    width: 6px;
+    height: 0;
+    background: #000;
+    transition: .8s;
+}
+
+.box2line_rig {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    right: 0;
+    width: 6px;
+    height: 0;
+    background: #000;
+    transition: .8s;
+}
+
+
+.box2_tit {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #1d1d1b;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 50px;
+    font-weight: 600;
+    opacity: 0;
+    transition: .8s;
+    transition-delay: 1.2s;
+}
+
+.box2_img1,
+.box2_img2,
+.box2_img3,
+.box2_img4,
+.box2_img5 {
+    position: absolute;
+    left: 0;
+    bottom: 53px;
+    width: 100%;
+    opacity: 0;
+    transform: translate(0, 10%);
+    transition: .8s;
+    transition-delay: 2s;
+}
+
+.box2_img6 {
+    position: absolute;
+    left: 30%;
+    bottom: 47px;
+    opacity: 0;
+    transform: translate(0, 10%);
+    transition: .8s;
+    transition-delay: 1.6s;
+}
+
+.box2_rig {
+    width: 37.5%;
+    height: 100%;
+    position: relative;
+}
+
+.box2_rig1,
+.box2_rig2,
+.box2_rig3,
+.box2_rig4 {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    opacity: 0;
+    transition: 1.2s;
+    transition-delay: 2.8s;
+}
+
+.box2_txt {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 64px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.box2_txt_bot {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.box2_area2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box2_area2_lef,
+.box2_area2_rig {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.box2_top {
+    width: 100%;
+    height: 28%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.box2_top_p {
+    font-size: 45px;
+    color: #1d1d1b;
+    font-weight: 500;
+    line-height: 50px;
+    transition: 0.6s;
+}
+
+.box2line_top3 {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_top4 {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_mid1 {
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box2line_mid2 {
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box2line_bot6 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_bot7 {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_lef2 {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 6px;
+    height: 22%;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_lef3 {
+    position: absolute;
+    top: 31%;
+    left: 0;
+    width: 6px;
+    height: 65%;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_rig2 {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 6px;
+    height: 22%;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_rig3 {
+    position: absolute;
+    top: 31%;
+    right: 0;
+    width: 6px;
+    height: 65%;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box2line_center1 {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 22%;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box2line_center2 {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 65%;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box2_top_tit {
+    position: relative;
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-family: 'Red Hat Display';
+    margin-bottom: 20px;
+    transition: 0.6s;
+    position: relative;
+}
+
+.box2_top img {
+    width: 30%;
+    position: absolute;
+    top: 50px;
+    right: 24%;
+    transition: 0.6s;
+}
+
+.box2_top span {
+    font-size: 13px;
+    transition: 0.6s;
+}
+
+.box2_bot {
+    width: 100%;
+    height: 72%;
+    background-color: #fff;
+    position: relative;
+}
+
+.box2_bot ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.fig {
+    transition: 0.6s;
+    transition-delay: 4s;
+}
+
+.box2_img7 {
+    background: url(../img/architecture2-lef1.svg)no-repeat center/cover;
+    transition: 0.6s;
+}
+
+.box2_img8 {
+    background: url(../img/architecture2-lef2.svg)no-repeat center/cover;
+    transition: 0.6s;
+}
+
+.box2_img9 {
+    background: url(../img/architecture2-lef3.svg)no-repeat center/cover;
+    transition: 0.6s;
+}
+
+.box2_img10 {
+    background: url(../img/architecture2-lef4.svg)no-repeat center/cover;
+    transition: 0.6s;
+}
+
+.box2_img11 {
+    background: url(../img/architecture2-rig1.svg)no-repeat center/cover;
+}
+
+.box2_img12 {
+    background: url(../img/architecture2-rig2.svg)no-repeat center/cover;
+}
+
+.box2_img13 {
+    background: url(../img/architecture2-rig3.svg)no-repeat center/cover;
+}
+
+.box2_img14 {
+    background: url(../img/architecture2-rig4.svg)no-repeat center/cover;
+}
+
+.box2_img15 {
+    background: url(../img/architecture2-rig5.svg)no-repeat center/cover;
+}
+
+.box2_img16 {
+    background: url(../img/architecture2-rig6.svg)no-repeat center/cover;
+}
+
+.box2_img17 {
+    background: url(../img/architecture2-rig7.svg)no-repeat center/cover;
+}
+
+.box2_img18 {
+    background: url(../img/architecture2-rig8.svg)no-repeat center/cover;
+}
+
+.box2_img19 {
+    background: url(../img/architecture2-rig9.svg)no-repeat center/cover;
+}
+
+.box2_img20 {
+    background: url(../img/architecture2-rig10.svg)no-repeat center/cover;
+}
+
+.box2_img21 {
+    background: url(../img/architecture2-rig11.svg)no-repeat center/cover;
+}
+
+.box2_img22 {
+    background: url(../img/architecture2-rig12.svg)no-repeat center/cover;
+}
+
+.box2_img23 {
+    background: url(../img/architecture2-ori.svg)no-repeat center/cover;
+}
+
+.box2_img24 {
+    background: url(../img/architecture2-fl1.svg)no-repeat center/cover;
+}
+
+.box2_img25 {
+    background: url(../img/architecture2-fl2.svg)no-repeat center/cover;
+}
+
+.box2_img26 {
+    background: url(../img/architecture2-fl3.svg)no-repeat center/cover;
+}
+
+.box2_img27 {
+    background: url(../img/architecture2-fl4.svg)no-repeat center/cover;
+}
+
+.box2_img28 {
+    background: url(../img/architecture2-fl5.svg)no-repeat center/cover;
+}
+
+.box2_img29 {
+    background: url(../img/architecture2-fl6.svg)no-repeat center/cover;
+}
+
+.box2_img30 {
+    background: url(../img/architecture2-fl7.svg)no-repeat center/cover;
+}
+
+.s_txt {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    color: #231f20;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+    z-index: 10;
+}
+
+/* box3 - 입지환경 */
+.box3 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background-color: #f9dae2;
+}
+
+.box3_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box3_lef {
+    width: 62.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box3_img {
+    width: 100%;
+    height: 100%;
+    background: url(../img/location-bg.svg)no-repeat center/cover;
+    opacity: 0;
+    transition: .8s;
+}
+
+.box3line_top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    background: #000;
+    transition: .8s;
+    z-index: 10;
+}
+
+.box3line_bot {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+    z-index: 10;
+}
+
+.box3line_lef {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 6px;
+    height: 95%;
+    background: #000;
+    transition: .8s;
+    z-index: 10;
+}
+
+.box3line_rig {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 6px;
+    height: 95%;
+    background: #000;
+    transition: .8s;
+    z-index: 10;
+}
+
+.box3_rig {
+    width: 37.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box3line_top2 {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 90%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box3line_bot2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box3line_bot3 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box3line_bot4 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box3line_bot5 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box3line_bot6 {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    width: 90%;
+    height: 6px;
+    background: #000;
+    transition: .8s;
+}
+
+.box3_rig1 {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    transition: 1.2s;
+    opacity: 0;
+}
+
+.box3_rig2,
+.box3_rig3,
+.box3_rig4 {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.box3_rig5 {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    transition: 1.2s;
+    transition-delay: 2.8s;
+    opacity: 0;
+}
+
+.rig1_txt {
+    font-weight: 600;
+    color: #000;
+    font-size: 42px;
+    position: relative;
+}
+
+.rig1_txt::before {
+    content: "";
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    width: 30px;
+    height: 40px;
+    background: url(../img/location-icon1.png)no-repeat center/cover;
+}
+
+.won {
+    color: #fff;
+    background-color: #ee7c00;
+    border-radius: 50%;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    width: 90px;
+    height: 90px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rig2_txt1 {
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+    color: #000;
+}
+
+.rig2_txt2 {
+    color: #000;
+    font-size: 14px;
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin-left: 65px;
+}
+
+.rig3_txt1 {
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color: #000;
+    font-size: 65px;
+}
+
+.rig3_txt2 {
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: -1px;
+    margin-left: 10px;
+}
+
+.rig4_txt1 {
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color: #000;
+    font-size: 65px;
+    letter-spacing: -2px;
+    margin-right: 30px;
+}
+
+.rig4_txt2 {
+    color: #000;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: -1px;
+    line-height: 10px;
+}
+
+.rig4_txt3 {
+    font-size: 7px;
+}
+
+.box3_rig5>img {
+    height: 30%;
+    margin: 0 20px 30px 45px;
+}
+
+.rig5_txt1 {
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    color: #000;
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.rig5_txt2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.box3_area2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box3line_top3 {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_top4 {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_mid1 {
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box3line_mid2 {
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box3line_bot7 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_bot8 {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_lef2 {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 6px;
+    height: 22%;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+    z-index: 10;
+}
+
+.box3line_lef3 {
+    position: absolute;
+    top: 31%;
+    left: 0;
+    width: 6px;
+    height: 65%;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_rig2 {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 6px;
+    height: 22%;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_rig3 {
+    position: absolute;
+    top: 31%;
+    right: 0;
+    width: 6px;
+    height: 65%;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 0.3s;
+}
+
+.box3line_center1 {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 22%;
+    background: #000;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box3line_center2 {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 65%;
+    background: #000;
+    z-index: 10;
+    transition: 0.6s;
+    transition-delay: 1s;
+}
+
+.box3_area2_lef,
+.box3_area2_rig {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.box3_top {
+    width: 100%;
+    height: 28%;
+    opacity: 0;
+    transition: 0.8s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.box3_top_p {
+    font-size: 72px;
+    color: #1d1d1b;
+    font-weight: 700;
+    line-height: 70px;
+    transition: 0.6s;
+}
+
+.box3_bot {
+    width: 100%;
+    height: 72%;
+    background-color: #fff;
+    position: relative;
+    transition: 0.8s;
+    opacity: 0;
+}
+
+.box3_bot_txt {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    letter-spacing: 1.5px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.box3_bot_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box3_bot_img img {
+    display: block;
+    width: 100%;
+    opacity: 0;
+    transition: .8s;
+}
+
+.box3_bot_img span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.6s;
+}
+
+.box3_bot_img em {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.6s;
+}
+
+.box3_top_txt1 {
+    color: #000;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+.box3_top_txt2 {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 0;
+}
+
+.box3_bot_box {
+    padding: 50px 50px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.box3_bot_txt1 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.box3_bot_txt2 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.box3_bot_txt3 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* box4 - 타입안내 */
+.box4 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background-color: #d3e9da;
+}
+
+.box4_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box4line_top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box4line_top1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .8s;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+
+}
+
+.box4line_top2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .8s;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_top3 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .8s;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_top4 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_top5 {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 45%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: 1s;
+}
+
+.box4line_top6 {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    width: 45%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: 1s;
+}
+
+.box4line_bot {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box4line_lef1 {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_lef2 {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_lef3 {
+    position: absolute;
+    top: 53%;
+    left: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_lef4 {
+    position: absolute;
+    top: 78%;
+    left: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_lef5 {
+    position: absolute;
+    top: 4%;
+    left: 0;
+    width: 6px;
+    height: 8%;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_lef6 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 6px;
+    height: 75%;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_rig1 {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_rig2 {
+    position: absolute;
+    top: 28%;
+    right: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_rig3 {
+    position: absolute;
+    top: 53%;
+    right: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_rig4 {
+    position: absolute;
+    top: 78%;
+    right: 0;
+    width: 6px;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_rig5 {
+    position: absolute;
+    top: 4%;
+    right: 0;
+    width: 6px;
+    height: 8%;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_rig6 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 6px;
+    height: 75%;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_mid1 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 8%;
+    transition: .8s;
+    transition-delay: 1s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box4line_mid2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 75%;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: 1s;
+}
+
+.box4line_bot2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+}
+
+.guide_box {
+    width: 100%;
+    height: 100%;
+}
+
+.box4_guide1 {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box4_guide1:hover,
+.box4_guide2:hover,
+.box4_guide3:hover,
+.box4_guide4:hover {
+    background-color: #fff;
+    transition: .6s;
+}
+
+.box4_guide2 {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.box4_guide3 {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.box4_guide4 {
+    position: relative;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.guide_txt {
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+    margin-left: 100px;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.guide_txt2 {
+    font-weight: 500;
+    font-size: 28px;
+    margin-right: 80px;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.box4_area2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.box4_top {
+    width: 100%;
+    height: 16%;
+    display: flex;
+}
+
+.box4_top_lef {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.box4_top_rig {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.box4_top_txt {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Red Hat Display';
+    opacity: 0;
+    transition-delay: 1.4s;
+    transition: .8s;
+}
+
+.box4_top span {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 10px;
+    opacity: 0;
+    transition: .8s;
+    transition-delay: 1.4s;
+}
+
+.box4_bot {
+    width: 100%;
+    height: 84%;
+    display: flex;
+}
+
+.box4_bot2 {
+    width: 100%;
+    height: 84%;
+    display: none;
+}
+
+.box4_bot_lef {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    opacity: 0;
+    transition: .8s;
+
+}
+
+.box4_txtbox {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    opacity: 0;
+    transition: .8s;
+
+}
+
+.box4_txtbox span {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box4_txtbox em {
+    display: inline-block;
+    background-color: #facfd4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.box4_bot_txt1 {
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+    color: #000;
+}
+
+.box4_bot_txt2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box4_bot_txt3 {
+    font-size: 14px;
+}
+
+.box4_bot_txt4 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+}
+
+.box4_img1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: .8s;
+}
+
+.box4_img1 img {
+    width: 45%;
+}
+
+.box4_bot_rig {
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    opacity: 0;
+    transition: .8s;
+    transition-delay: 1.4s;
+}
+
+/* box5 - 커뮤니티 */
+.box5 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    background-color: #fff1ce;
+}
+
+.box5_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box5_area2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box5line_top1 {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    width: 46%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_top2 {
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    width: 46%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_top3 {
+    position: absolute;
+    top: 32%;
+    left: 52%;
+    width: 46%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_top4 {
+    position: absolute;
+    top: 66%;
+    left: 52%;
+    width: 46%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_top5 {
+    position: absolute;
+    top: 0;
+    left: 2%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_top6 {
+    position: absolute;
+    top: 0;
+    left: 34%;
+    width: 64%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_lef {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 93%;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_lef2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 93%;
+    background: #000;
+    z-index: 12;
+}
+
+.box5line_lef3 {
+    position: absolute;
+    top: 50%;
+    left: 31.6%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 93%;
+    background: #000;
+    z-index: 12;
+    transition: .8s;
+}
+
+
+.box5line_rig1 {
+    position: absolute;
+    top: 4%;
+    right: 0;
+    width: 6px;
+    height: 24%;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box5line_rig2 {
+    position: absolute;
+    top: 38%;
+    right: 0;
+    width: 6px;
+    height: 24%;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box5line_rig3 {
+    position: absolute;
+    bottom: 4%;
+    right: 0;
+    width: 6px;
+    height: 24%;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box5line_rig4 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 93%;
+    background: #000;
+    z-index: 10;
+}
+
+.box5line_bot1 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 46%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_bot2 {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    width: 46%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_bot3 {
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    width: 28%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_bot4 {
+    position: absolute;
+    bottom: 0;
+    left: 34%;
+    width: 64%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.box5line_center1 {
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 24%;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box5line_center2 {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 24%;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box5line_center3 {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 24%;
+    transition: .8s;
+    background-color: #000;
+    z-index: 10;
+}
+
+.box5_lef {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box5_rig {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.box5_rig1,
+.box5_rig2,
+.box5_rig3 {
+    position: relative;
+    height: 27%;
+    padding: 20px 30px;
+    background-color: transparent;
+}
+
+
+.box5_txt {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 40px;
+    transition: .8s;
+}
+
+.box5_txt::before {
+    content: 'eunpyeong';
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 18px;
+    color: #000;
+    font-family: 'Red Hat Display';
+    letter-spacing: 1px;
+}
+
+.box5_img1, .box5_img2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    transition: .8s;
+}
+
+.box5_txt2 {
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    transition: .8s;
+}
+
+.box5_rig1_txt1 {
+    color: #000;
+    font-family: 'Red Hat Display';
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    transition: .8s;
+}
+
+.box5_rig1_txt2 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    transition: .8s;
+}
+
+.box5_rig1_txt3 {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    font-family: 'Red Hat Display';
+    font-size: 120px;
+    font-weight: 900;
+    transition: .8s;
+}
+
+.box5_rig2_txt1 {
+    font-family: 'Red Hat Display';
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -5px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transition: .8s;
+}
+
+.box5_rig2 em>img {
+    width: 9%;
+}
+
+.box5_rig2_txt2 {
+    position: absolute;
+    bottom: 35%;
+    right: 3%;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .8s;
+}
+
+.box5_rig2_txt3 {
+    position: absolute;
+    bottom: 15%;
+    right: 3%;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    transition: .8s;
+}
+
+.box5_rig2_img {
+    position: absolute;
+    bottom: 50%;
+    right: 3%;
+}
+
+.box5_rig3_txt1 {
+    color: #000;
+    font-weight: 900;
+    font-family: 'Red Hat Display';
+    font-size: 100px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transition: .8s;
+}
+
+.box5_rig3_txt2 {
+    position: absolute;
+    bottom: 25%;
+    left: 6%;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .8s;
+}
+
+.box5_rig3_txt3 {
+    position: absolute;
+    bottom: 17%;
+    left: 6%;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000;
+    transition: .8s;
+}
+
+.box5_rig3_txt4 {
+    position: absolute;
+    bottom: 8%;
+    left: 6%;
+    font-size: 10px;
+    font-weight: 500;
+    color: #000;
+}
+
+.box5_area2_lef {
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    transition: .8s;
+}
+
+.box5_item_top {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.box5_item_txt1 {
+    color: #1d1d1b;
+    font-weight: 500;
+    font-family: 'Red Hat Display';
+    font-size: 40px;
+    transition: .8s;
+}
+
+.box5_item_img {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 20%;
+    transition: .8s;
+}
+
+.box5_area2_rig {
+    width: 68%;
+    position: relative;
+    overflow: hidden;
+}
+
+.itemline_x1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_x2 {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_x3 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_x4 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_x5 {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_y1 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 6px;
+    height: 100%;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_y2 {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 6px;
+    height: 100%;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_y3 {
+    position: absolute;
+    left: 60%;
+    width: 6px;
+    height: 100%;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+}
+
+.itemline_y4 {
+    position: absolute;
+    left: 80%;
+    width: 6px;
+    height: 100%;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+}
+.item {
+    display: block;
+    z-index:11;
+    background-color:#fff;
+    width: 25px;
+    height: 25px;
+    transition: 0.8s;
+}
+.item.wh {
+    position: absolute;
+    top:-2%;
+    left:0;
+}
+.item.wh2 {
+    position: absolute;
+    top:-2%;
+    left:18%;
+}
+.item.wh3 {
+    position: absolute;
+    top:-2%;
+    left:38%;
+}
+.item.wh4 {
+    position: absolute;
+    top:-2%;
+    left:58%;
+}
+.item.wh5 {
+    position: absolute;
+    top:-2%;
+    left:78%;
+}
+.item.wh6 {
+    position: absolute;
+    top:-2%;
+    left:98%;
+
+}
+.item.wh7 {
+    position: absolute;
+    top:18%;
+    left:0;
+
+}
+.item.wh8 {
+    position: absolute;
+    top:18%;
+    left:18%;
+}
+.item.wh9 {
+    position: absolute;
+    top:18%;
+    left:38%;
+}
+.item.wh10 {
+    position: absolute;
+    top:18%;
+    left:58%;
+}
+.item.wh11 {
+    position: absolute;
+    top:18%;
+    left:78%;
+}
+.item.wh12 {
+    position: absolute;
+    top:18%;
+    left:98%;
+}
+.item.wh13 {
+    position: absolute;
+    top:38%;
+    left:0;
+}
+.item.wh14 {
+    position: absolute;
+    top:38%;
+    left:18%;
+}
+.item.wh15 {
+    position: absolute;
+    top:38%;
+    left:38%;
+}
+.item.wh16 {
+    position: absolute;
+    top:38%;
+    left:58%;
+}
+.item.wh17 {
+    position: absolute;
+    top:38%;
+    left:78%;
+}
+.item.wh18 {
+    position: absolute;
+    top:38%;
+    left:98%;
+}
+.item.wh19 {
+    position: absolute;
+    top:58%;
+    left:0;
+}
+.item.wh20 {
+    position: absolute;
+    top:58%;
+    left:18%;
+}
+.item.wh21 {
+    position: absolute;
+    top:58%;
+    left:38%;
+}
+.item.wh22 {
+    position: absolute;
+    top:58%;
+    left:58%;
+}
+.item.wh23 {
+    position: absolute;
+    top:58%;
+    left:78%;
+}
+.item.wh24 {
+    position: absolute;
+    top:58%;
+    left:98%;
+}
+.item.wh25 {
+    position: absolute;
+    top:78%;
+    left:0;
+}
+.item.wh26 {
+    position: absolute;
+    top:78%;
+    left:18%;
+}
+.item.wh27 {
+    position: absolute;
+    top:78%;
+    left:38%;
+}
+.item.wh28 {
+    position: absolute;
+    top:78%;
+    left:58%;
+}
+.item.wh29 {
+    position: absolute;
+    top:78%;
+    left:78%;
+}
+.item.wh30 {
+    position: absolute;
+    top:78%;
+    left:98%;
+}
+.item.wh31 {
+    position: absolute;
+    top:98%;
+    left:18%;
+}
+.item.wh32 {
+    position: absolute;
+    top:98%;
+    left:38%;
+}
+.item.wh33 {
+    position: absolute;
+    top:98%;
+    left:58%;
+}
+.item.wh34 {
+    position: absolute;
+    top:98%;
+    left:78%;
+}
+.box5_item_bot {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.box5_item_bot li {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    z-index: 12;
+    transition: 1.2s;
+}
+
+.i_name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+}
+
+.i_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+}
+
+.i_txt {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.i16 .i_name {
+    width: 40px;
+}
+.i16 .i_icon {
+    width: 55px;
+}
+.i19 .i_name {
+    width: 70px;
+}
+
+.i19 .i_icon {
+    width: 70px;
+}
+
+.i7 .i_txt, .i8 .i_txt,.i9 .i_txtm,.i10 .i_txt,.i11 .i_txt,.i12 .i_txt,.i13 .i_txt,.i15 .i_txt,.i17 .i_txt,.i18 .i_txt {
+    width: 70px;
+}
+.i20 .i_txt,
+.i21 .i_txt, 
+.i22 .i_txt {
+    width: 40px;
+}
+
+.box5_area2_txt {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    color: #1d1d1b;
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 50px;
+    transition: .8s;
+}
+.box5_area2_txt2 {
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    transition: .8s;
+    opacity: 0;
+}
+.box5_area2_txt2 span {
+    color: #1d1d1b;
+    font-family: 'Red Hat Display';
+    font-size: 22px;
+}
+.box5_area2_txt2 p {
+    color: #1d1d1b;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.box5_area2_img, 
+.box5_area2_num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
+    transition: .8s;
+}
+
+/* box6 - 뉴스미디어 */
+.box6 {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    z-index: 13;
+    background-color: #7b7b7b;
+}
+
+.box6_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #fff;
+}
+
+.box6line_top1 {
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    width: 0;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+
+.box6line_top2 {
+    position: absolute;
+    top: 0%;
+    right: 2%;
+    width: 0;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+.box6line_lef {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 0;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+.box6line_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 6px;
+    height: 0;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+.box6line_rig {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 0;
+    background: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+.box6line_bot1 {
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    width: 0;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+
+.box6line_bot2 {
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
+    width: 0;
+    height: 6px;
+    background-color: #000;
+    z-index: 10;
+    transition: .8s;
+    transition-delay: .3s;
+}
+.box6_lef {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: .8s;
+    transition-delay: .8s;
+}
+
+.box6_rig {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transition: .8s;
+    transition-delay: .8s;
+}
+
+.box6_lef_tit {
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    line-height: 150px;
+}
+.box6_rig_tit {
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    font-family: 'Red Hat Display';
+    font-weight: 500;
+    line-height: 150px;
+}
+.box6_searchBox {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.box6_total {
+    color: #666;
+    font-size: 14px;
+}
+.input1 {
+    position: relative;
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+    padding-left: 5px;
+    color: #555;
+    border: 1px solid #c1c1c1;
+}
+.box6_input {
+    display: flex;
+    color: #555;
+}
+.input2 {
+    width: 180px;
+    height: 30px;
+    margin-left: 5px;
+    border: 1px solid #c1c1c1;
+}
+.box6_img {
+    position: relative;
+}
+.box6_img::before {
+    content: '';
+    position: absolute;
+    top:12px;
+    right: 6px;
+    width: 10px;
+    height: 8px;
+    background: url(../img/sel-icon.png)no-repeat center/cover;
+    z-index: 10;
+}
+.box6_input img {
+    cursor: pointer;
+}
+
+.box6_post {
+    width: 80%;
+    height: 50%;
+    border-top: 2px solid #666;
+    margin: 20px auto 0;
+}
+.box6_post li {
+    display: flex;
+    align-items: center;
+    height: 15%;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+}
+.post_1 {
+   width: 15%;
+   margin-left: 20px;
+}
+.post_2 {
+    width: 50%;
+}
+.post_3 {
+    width: 20%;
+}
+.post_4 {
+    width: 10%;
+}
+
+.box6_btBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+.box6_bt {
+    background: pink;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    word-break: keep-all;
+    background: #e4eaec;
+    color: #000;
+    cursor: pointer;
+}
+.box6_bt:nth-child(1) {
+    color:#fff;
+    background-color: #333;
+}
+.box6_bt:nth-child(7) {
+    width: 40px;
+}
+
+.media_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.media_box li {
+    position: relative;
+    cursor: pointer;
+    color: #000;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #000;
+    transition: 0.3s;
+    text-align: center;
+}
+.media1 {
+    opacity: 1;
+}
+.media2 {
+    opacity: 0.5;
+}
+.media_box li em {
+    position: absolute;
+    background-color: #fff;
+    width: 0.2604vw;
+    height: 0.2604vw;
+}
+.media_box li em:nth-child(1) {
+    top: -2px;
+    left: -2px;
+}
+.media_box li em:nth-child(2) {
+    top: -2px;
+    right: -2px;
+}
+.media_box li em:nth-child(3) {
+    bottom: -2px;
+    left: -2px;
+}
+.media_box li em:nth-child(4) {
+    bottom: -2px;
+    right: -2px;
+}
+
+.vd1 {
+    display: block;
+    position: absolute;
+    top: 60%; left:50%;
+    transform: translate(-50%,-50%);
+}
+.vd2 {
+    display: none;
+    position: absolute;
+    top: 60%; left:50%;
+    transform: translate(-50%,-50%);
+}
