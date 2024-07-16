@@ -74,11 +74,11 @@ $(document).ready(function () {
     });
 }
 $('.tab2').click(function () {
-    resetElements2(); // 탭 클릭 시 초기화 함수 호출
-    animateBox2Elements(); // 애니메이션 함수 호출
+    resetElements2(); 
+    animateBox2Elements(); 
 
-    resetZIndexes(); // 다른 탭들의 .on 클래스 제거
-    $(this).addClass('on'); // 현재 탭에 .on 클래스 추가
+    resetZIndexes(); 
+    $(this).addClass('on'); 
     if (swiper2) {
         swiper2.update();
     }
@@ -144,11 +144,11 @@ $(document).ready(function () {
         });
     }
     $('.tab3').click(function () {
-        resetElements3(); // 탭 클릭 시 초기화 함수 호출
-        animateBox3Elements(); // 애니메이션 함수 호출
+        resetElements3(); 
+        animateBox3Elements(); 
 
-        resetZIndexes(); // 다른 탭들의 .on 클래스 제거
-        $(this).addClass('on'); // 현재 탭에 .on 클래스 추가
+        resetZIndexes(); 
+        $(this).addClass('on'); 
         if (swiper3) {
             swiper3.update();
         }
@@ -202,11 +202,11 @@ $(document).ready(function () {
 
     // 탭 클릭 시 처리
     $('.tab4').click(function () {
-        resetElements4(); // 탭 클릭 시 초기화 함수 호출
-        animateBox4Elements(); // 애니메이션 함수 호출
+        resetElements4(); 
+        animateBox4Elements(); 
 
-        resetZIndexes(); // 다른 탭들의 .on 클래스 제거
-        $(this).addClass('on'); // 현재 탭에 .on 클래스 추가
+        resetZIndexes();  
+        $(this).addClass('on'); 
         if (swiper4) {
             swiper4.update();
         }
@@ -271,11 +271,11 @@ $(document).ready(function () {
     }
 
     $('.tab5').click(function () {
-        resetElements5(); // 탭 클릭 시 초기화 함수 호출
-        animateBox5Elements(); // 애니메이션 함수 호출
+        resetElements5(); 
+        animateBox5Elements(); 
 
-        resetZIndexes(); // 다른 탭들의 .on 클래스 제거
-        $(this).addClass('on'); // 현재 탭에 .on 클래스 추가
+        resetZIndexes(); 
+        $(this).addClass('on'); 
     });
 
 });

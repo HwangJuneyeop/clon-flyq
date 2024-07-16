@@ -584,7 +584,16 @@ header {
     width: 100%;
     height: 100%;
 }
-
+.area3line_top {
+    position: absolute;
+    top: 0;
+    left: 1.5%;
+    width: 97%;
+    height: 6px;
+    display: block;
+    background-color: #000;
+    transition: .8s;
+}
 .area3line_lef1 {
     position: absolute;
     top: 4%;
