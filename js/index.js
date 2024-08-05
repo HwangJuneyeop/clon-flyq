@@ -21,68 +21,68 @@ function animateElements() {
 
 /* box2 - 특화설계 */
 $(document).ready(function () {
- function resetElements2() {
-    $('.box2line_top').css({ 'width': '0', 'left': '0', 'transition-delay': '0' })
-    $('.box2line_top2').css({ 'width': '0', 'right': '0', 'transition-delay': '0' })
-    $('.box2line_lef, .box2line_rig').css({ 'top': '0', 'height': '0', 'transition-delay': '0' })
-    $('.box2line_bot, .box2line_bot5').css({ 'left': '0', 'width': '0', 'transition-delay': '0' })
-    $('.box2line_bot2, .box2line_bot3 ,.box2line_bot4').css({ 'left': '0', 'width': '0','opacity':'0', 'transition-delay': '0' })
-    $('.box2_tit,.box2_img1,.box2_img2,.box2_img3,.box2_img4,.box2_img5,.box2_img6,.box2_rig1,.box2_rig2,.box2_rig3,.box2_rig4').css({ 'opacity':'0', 'transition-delay': '0' })
- }
- function animateBox2Elements() {
-    $('.box2line_top').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'width': '95%', 'left': '50%', 'transition-delay': '.3s' });
-        }.bind(this));
-    });
-    $('.box2line_top2').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'width': '90%', 'right': '5%', 'transition-delay': '.3s' });
-        }.bind(this));
-    });
-
-    $('.box2line_lef, .box2line_rig').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'top': '50%', 'height': '95%', 'transition-delay': '.5s' });
-        }.bind(this));
-    });
-
-    $('.box2line_bot, .box2line_bot5').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'left': '50%', 'width': '95%', 'transition-delay': '.5s' });
-        }.bind(this));
-    });
-    $('.box2line_bot2, .box2line_bot3, .box2line_bot4').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'left': '50%', 'width': '90%', 'opacity': '1', 'transition-delay': '2.3s' });
-        }.bind(this));
-    });
-    $('.box2_tit').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'opacity': '1', 'transition-delay': '1.2s' });
-        }.bind(this));
-    });
-    $('.box2_img1,.box2_img2,.box2_img3,.box2_img4,.box2_img5,.box2_img6').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'opacity': '1', 'transition-delay': '2s' });
-        }.bind(this));
-    });
-    $('.box2_rig1,.box2_rig2,.box2_rig3,.box2_rig4').each(function () {
-        setTimeout(function () {
-            $(this).css({ 'opacity': '1', 'transition-delay': '2.8s' });
-        }.bind(this));
-    });
-}
-$('.tab2').click(function () {
-    resetElements2(); 
-    animateBox2Elements(); 
-
-    resetZIndexes(); 
-    $(this).addClass('on'); 
-    if (swiper2) {
-        swiper2.update();
+    function resetElements2() {
+        $('.box2line_top').css({ 'width': '0', 'left': '0', 'transition-delay': '0' })
+        $('.box2line_top2').css({ 'width': '0', 'right': '0', 'transition-delay': '0' })
+        $('.box2line_lef, .box2line_rig').css({ 'top': '0', 'height': '0', 'transition-delay': '0' })
+        $('.box2line_bot, .box2line_bot5').css({ 'left': '0', 'width': '0', 'transition-delay': '0' })
+        $('.box2line_bot2, .box2line_bot3 ,.box2line_bot4').css({ 'left': '0', 'width': '0', 'opacity': '0', 'transition-delay': '0' })
+        $('.box2_tit,.box2_img1,.box2_img2,.box2_img3,.box2_img4,.box2_img5,.box2_img6,.box2_rig1,.box2_rig2,.box2_rig3,.box2_rig4').css({ 'opacity': '0', 'transition-delay': '0' })
     }
-});
+    function animateBox2Elements() {
+        $('.box2line_top').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'width': '95%', 'left': '50%', 'transition-delay': '.3s' });
+            }.bind(this));
+        });
+        $('.box2line_top2').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'width': '90%', 'right': '5%', 'transition-delay': '.3s' });
+            }.bind(this));
+        });
+
+        $('.box2line_lef, .box2line_rig').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'top': '50%', 'height': '95%', 'transition-delay': '.5s' });
+            }.bind(this));
+        });
+
+        $('.box2line_bot, .box2line_bot5').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'left': '50%', 'width': '95%', 'transition-delay': '.5s' });
+            }.bind(this));
+        });
+        $('.box2line_bot2, .box2line_bot3, .box2line_bot4').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'left': '50%', 'width': '90%', 'opacity': '1', 'transition-delay': '2.3s' });
+            }.bind(this));
+        });
+        $('.box2_tit').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'opacity': '1', 'transition-delay': '1.2s' });
+            }.bind(this));
+        });
+        $('.box2_img1, .box2_img2,.box2_img3,.box2_img4,.box2_img5,.box2_img6').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'opacity': '1', 'transition-delay': '2s' });
+            }.bind(this));
+        });
+        $('.box2_rig1, .box2_rig2,.box2_rig3,.box2_rig4').each(function () {
+            setTimeout(function () {
+                $(this).css({ 'opacity': '1', 'transition-delay': '2.8s' });
+            }.bind(this));
+        });
+    }
+    $('.tab2').click(function () {
+        resetElements2();
+        animateBox2Elements();
+
+        resetZIndexes();
+        $(this).addClass('on');
+        if (swiper2) {
+            swiper2.update();
+        }
+    });
 })
 
 
@@ -114,13 +114,13 @@ $(document).ready(function () {
                 $(this).css({ 'opacity': '1', 'transition-delay': '1s' });
             }.bind(this));
         });
-    
+
         $('.box3line_lef, .box3line_rig').each(function () {
             setTimeout(function () {
                 $(this).css({ 'top': '50%', 'height': '95%', 'transition-delay': '.5s' });
             }.bind(this));
         });
-    
+
         $('.box3line_bot').each(function () {
             setTimeout(function () {
                 $(this).css({ 'left': '50%', 'width': '95%', 'transition-delay': '.5s' });
@@ -136,7 +136,7 @@ $(document).ready(function () {
                 $(this).css({ 'opacity': '1', 'transition-delay': '1.2s' });
             }.bind(this));
         });
-    
+
         $('.box3_rig1,.box3_rig2,.box3_rig3,.box3_rig4, .box3_rig5').each(function () {
             setTimeout(function () {
                 $(this).css({ 'opacity': '1', 'transition-delay': '1.5s' });
@@ -144,11 +144,11 @@ $(document).ready(function () {
         });
     }
     $('.tab3').click(function () {
-        resetElements3(); 
-        animateBox3Elements(); 
+        resetElements3();
+        animateBox3Elements();
 
-        resetZIndexes(); 
-        $(this).addClass('on'); 
+        resetZIndexes();
+        $(this).addClass('on');
         if (swiper3) {
             swiper3.update();
         }
@@ -202,17 +202,31 @@ $(document).ready(function () {
 
     // 탭 클릭 시 처리
     $('.tab4').click(function () {
-        resetElements4(); 
-        animateBox4Elements(); 
+        resetElements4();
+        animateBox4Elements();
 
-        resetZIndexes();  
-        $(this).addClass('on'); 
+        resetZIndexes();
+        $(this).addClass('on');
         if (swiper4) {
             swiper4.update();
         }
     });
 });
+$(document).ready(function () {
+    $('.box4_top_lef').click(function () {
+        $('.box4_top_lef').css('background-color', 'white')
+        $('.box4_top_rig').css('background-color', 'transparent')
+        $('.box4_bot').css('display', 'flex');
+        $('.box4_bot2').css('display', 'none');
+    });
 
+    $('.box4_top_rig').click(function () {
+        $('.box4_top_rig').css('background-color', 'white')
+        $('.box4_top_lef').css('background-color', 'transparent')
+        $('.box4_bot').css('display', 'none');
+        $('.box4_bot2').css('display', 'flex');
+    });
+});
 
 /* box5-커뮤니티 */
 
@@ -271,11 +285,11 @@ $(document).ready(function () {
     }
 
     $('.tab5').click(function () {
-        resetElements5(); 
-        animateBox5Elements(); 
+        resetElements5();
+        animateBox5Elements();
 
-        resetZIndexes(); 
-        $(this).addClass('on'); 
+        resetZIndexes();
+        $(this).addClass('on');
     });
 
 });
@@ -384,7 +398,7 @@ function showbox4() {
 
     animateBox4Elements()
 }
-  
+
 function showbox5() {
     $('#box1').css('display', 'none');
     $('#box2').css('display', 'none');
@@ -394,8 +408,6 @@ function showbox5() {
     $('#box6').css('display', 'none');
 
     animateBox5Elements()
-
-  
 
 }
 
@@ -888,7 +900,7 @@ $(document).ready(function () {
                     $('.box5line_bot4').css({ 'width': '64%', 'left': '34%', 'transition-delay': '.8s' });
                     $('.box5line_lef3').css({ 'height': '93%', 'transition-delay': '.8s' });
                     $('.box5_area2_txt').css({ 'opacity': '1', 'transition-delay': '1.2s' });
-                    $('.box5_area2_lef').css({ 'transition-delay': '1.4s', 'background': '#fff' });
+                    $('.box5_area2_lef').css({ 'transition-delay': '1.4s', 'background': '#fff', 'opacity': '1' });
                     $('.box5_item_txt1, .box5_item_img').css({ 'transition-delay': '1.6s', 'opacity': '1' });
                     $('.itemline_x1, .itemline_x2, .itemline_x3,.itemline_x4,.itemline_x5').css({ 'width': '100%', 'transition-delay': '2.0s' });
                     $('.itemline_y1, .itemline_y2, .itemline_y3, .itemline_y4').css({ 'height': '100%', 'transition-delay': '2.0s' })
@@ -904,7 +916,7 @@ $(document).ready(function () {
                     $('.box5line_bot4').css({ 'width': '66%', 'left': '32%', 'transition-delay': '.3s' });
                     $('.box5line_lef3').css({ 'height': '1%', 'transition-delay': '.3s' });
                     $('.box5_area2_txt').css({ 'opacity': '0', 'transition-delay': '.3s' });
-                    $('.box5_area2_lef').css({ 'transition-delay': '.3s', 'background': 'transparent' });
+                    $('.box5_area2_lef').css({ 'transition-delay': '.3s', 'background': 'transparent', 'opacity': '0' });
                     $('.box5_item_txt1, .box5_item_img').css({ 'transition-delay': '0.3s', 'opacity': '0' });
                     $('.itemline_x1, .itemline_x2, .itemline_x3,.itemline_x4,.itemline_x5').css({ 'width': '0', 'transition-delay': '0.3s' });
                     $('.itemline_y1, .itemline_y2, .itemline_y3, .itemline_y4').css({ 'height': '0', 'transition-delay': '0.3s' })
@@ -956,7 +968,7 @@ $(document).ready(function () {
         $('.box5line_bot4').css({ 'width': '64%', 'left': '34%', 'transition-delay': '.8s' });
         $('.box5line_lef3').css({ 'height': '93%', 'transition-delay': '.8s' });
         $('.box5_area2_txt').css({ 'opacity': '1', 'transition-delay': '1.2s' });
-        $('.box5_area2_lef').css({ 'transition-delay': '1.4s', 'background': '#fff' });
+        $('.box5_area2_lef').css({ 'transition-delay': '1.4s', 'background': '#fff', 'opacity': '1' });
         $('.box5_item_txt1, .box5_item_img').css({ 'transition-delay': '1.6s', 'opacity': '1' });
         $('.itemline_x1, .itemline_x2, .itemline_x3,.itemline_x4, .itemline_x5').css({ 'width': '100%', 'transition-delay': '2.0s' });
         $('.itemline_y1, .itemline_y2, .itemline_y3, .itemline_y4').css({ 'height': '100%', 'transition-delay': '2.0s' });
@@ -973,7 +985,7 @@ $(document).ready(function () {
         $('.box5line_bot4').css({ 'width': '66%', 'left': '32%', 'transition-delay': '.3s' });
         $('.box5line_lef3').css({ 'height': '1%', 'transition-delay': '.3s' });
         $('.box5_area2_txt').css({ 'opacity': '0', 'transition-delay': '.3s' });
-        $('.box5_area2_lef').css({ 'transition-delay': '.3s', 'background': 'transparent' });
+        $('.box5_area2_lef').css({ 'transition-delay': '.3s', 'background': 'transparent', 'opacity': '0' });
         $('.box5_item_txt1, .box5_item_img').css({ 'transition-delay': '0.3s', 'opacity': '0' });
         $('.itemline_x1, .itemline_x2, .itemline_x3,.itemline_x4,.itemline_x5').css({ 'width': '0', 'transition-delay': '0.3s' });
         $('.itemline_y1, .itemline_y2, .itemline_y3, .itemline_y4').css({ 'height': '0', 'transition-delay': '0.3s' })

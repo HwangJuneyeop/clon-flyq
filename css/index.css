@@ -2207,7 +2207,6 @@ header {
     cursor: pointer;
     background-color: #fff;
 }
-
 .box4_top_rig {
     width: 50%;
     height: 100%;
@@ -2215,7 +2214,17 @@ header {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.box4_bot {
+    width: 100%;
+    height: 84%;
+    display: flex;
+}
 
+.box4_bot2 {
+    width: 100%;
+    height: 84%;
+    display: none;
 }
 
 .box4_top_txt {
@@ -2236,17 +2245,6 @@ header {
     transition-delay: 1.4s;
 }
 
-.box4_bot {
-    width: 100%;
-    height: 84%;
-    display: flex;
-}
-
-.box4_bot2 {
-    width: 100%;
-    height: 84%;
-    display: none;
-}
 
 .box4_bot_lef {
     width: 50%;
